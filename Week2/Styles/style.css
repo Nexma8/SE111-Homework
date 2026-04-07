@@ -1,0 +1,19 @@
+p{
+    color:blue;
+
+}
+
+h1{
+    color:darkcyan;
+    font-size: 100px;
+
+}
+
+#main-continer{
+    background-color: brown;
+}
+.pClass{
+    font-size: 40px;
+    background-color: darkgreen;
+    color:honeydew
+}
