@@ -1,0 +1,67 @@
+/*specify a tag */
+body{
+    display: flex;
+    justify-content: center;
+    /* vh is viewport height*/
+    height: 100vh;
+
+
+    background-color:chocolate
+
+}
+
+/*specifying by id */
+#main-cont{
+    border: 5px solid black;
+    width: 1000px;
+    height: 800px;
+
+    background-color: chartreuse;
+
+
+}
+
+#header{
+
+    height:130px;
+    border: 3px dotted palevioletred;
+    text-align: center;
+}
+
+#nav-bar{
+    height:50px;
+    text-align: center;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    padding-top: 25px;
+}
+
+/*class*/
+.nav-btn{
+    border: 2px solid black;
+    padding: 10px;
+
+}
+
+#content{
+    height:520px;
+    width:650px;
+    text-align: center;
+    margin: auto;
+
+
+}
+
+#lorem{
+    font-size: 20px;
+    border: 2px double blue;
+}
+
+#the-goods{
+    font-size: 30px; color: rgb(187, 37, 37);
+
+}
+
+#list{
+    color:hotpink
+}
