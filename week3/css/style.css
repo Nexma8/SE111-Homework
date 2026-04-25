@@ -1,0 +1,175 @@
+/*specify a tag */
+body{
+    display: flex;
+    justify-content: center;
+    /* vh is viewport height*/
+    height: 100vh;
+
+
+    background-color:chocolate
+
+}
+
+/*specifying by id */
+#main-cont{
+    border: 5px solid black;
+    width: 1000px;
+    height: 800px;
+
+    background-color: chartreuse;
+
+
+}
+#main-cont:hover{
+    background-color: rgb(112, 112, 212);
+}
+#header{
+
+    height:130px;
+    border: 3px dotted palevioletred;
+    text-align: center;
+    font-family: "ONE PIECE";
+
+    animation-name: spinningtext;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+
+
+    
+}
+#header:hover{
+    font-size:100px
+}
+
+#nav-bar{
+    height:50px;
+    text-align: center;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    padding-top: 25px;
+
+    animation-name: moving;
+
+    animation-duration: 15s;
+
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+
+    font-family: "ONE PIECE";
+}
+
+/*class*/
+.nav-btn{
+    border: 2px solid black;
+    padding: 10px;
+
+    animation-name: percentexam;
+
+    animation-duration: 10s;
+
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+
+}
+/*if link is not visited*/
+.nav-btn:link{
+    font-size: 20px;
+    background-color: crimson;
+}
+
+.nav-btn:visited{
+    background-color: darkseagreen;
+}
+
+#content{
+    height:520px;
+    width:650px;
+    text-align: center;
+    margin: auto;
+
+    
+
+
+}
+
+#lorem{
+    font-size: 20px;
+    border: 2px double blue;
+    font-family: "ONE PIECE";
+
+    
+}
+
+#the-goods{
+    font-size: 30px; color: rgb(187, 37, 37);
+
+}
+
+#list{
+    color:hotpink
+}
+/*animation example*/
+@keyframes spinningtext{
+    from{
+        color:red
+    }
+    to{
+        color:blue
+    }
+}
+
+
+@keyframes percentexam{
+    0%{
+        font-size: 0px;
+        color: azure;
+    }
+    50%{
+        font-size: 10px;
+        color:darkgoldenrod
+    }
+    65%{
+        font-size: 25px;
+        color:floralwhite
+    }
+    68%{
+        font-size: 3px;
+        color:fuchsia
+    }
+    75%{
+        font-size: 40px;
+        color:olive
+    }
+    100%{
+        font-size: 100px;
+        color:skyblue
+    }
+}
+
+
+@keyframes moving{
+    0%{
+        transform: translate(50px,10px);
+
+    }
+    20%{
+        transform: rotate(275deg);
+        transform: translate(-100px,50px);
+    }
+    30%{
+        transform: rotate(-180deg);
+        transform: scale(2);
+
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: translate(50px, 10px);
+        transform: rotate(180deg);
+    }
+}
