@@ -1,0 +1,214 @@
+#header{
+
+    justify-content: center;
+    color: white;
+    display: flex;
+    height:130px;
+    border: 10px dotted rgb(246, 243, 55);
+    size: 180px;
+    font-size: 30px;
+    gap: 80px;
+    animation-name: lights;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+
+    
+}
+#character{
+    color:white;
+    text-align: center;
+}
+#content{
+    color:white;
+    text-align: center;
+}
+.reviewt{
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.actimg{
+    height: 200px;
+    border: 5px outset;
+}
+
+body{
+    
+    background-color:rgb(0, 0, 0)
+
+}
+
+#nav-bar{
+    height:50px;
+    text-align: center;
+    border-top: 5px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+    padding-top: 25px;
+
+}
+
+.nav-btn{
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.nav-btn:link{
+    font-size: 20px;
+    color: crimson;
+}
+
+.nav-btn:visited{
+    color: darkseagreen;
+}
+
+.header2{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 0px
+}
+
+.img{
+    height:700px;
+    border: 5px outset;
+    border-color: rgb(41, 25, 0);
+
+}
+#img-row {
+  display: flex;
+  justify-content: center;
+  gap: 150px;         
+  padding: 0 40px;
+  
+}
+
+#hf-info, #we-info {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    color: white;
+    padding: 0 120px
+}
+
+#hf-info p, #we-info p {
+    margin: 4px 0;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 40px;
+    margin-top: 16px;
+}
+.hr{
+    width:80%;
+    border: 2px solid white;
+    
+    animation-name: hrmove;
+
+    animation-duration: 5s;
+
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+
+}
+
+#anime{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: black;
+
+}
+
+#ufo{
+    position: absolute;
+    height: 400px;
+    top: -400px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: ufoabduct 6s linear forwards;
+    animation-delay: 5s;
+
+}
+#evil{
+    position: absolute;
+    bottom: 20px;
+    width: 200px;
+    animation: evilrun 4s linear forwards;
+}
+#angel{
+    position: absolute;
+    bottom: 20px;
+    width: 280px;
+    animation: copsrun 8s linear forwards;
+}
+
+#list{
+    align-items: center;
+    font-size: 25px;
+}
+.infom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 40px;
+    margin-top: 16px;
+}
+
+@keyframes lights{
+    0%{
+        border-color:rgb(246, 243, 55);
+    }
+    25%{
+        border-color:rgb(243, 241, 117);
+    }
+    50%{
+        border-color:rgb(242, 241, 162);
+    }
+    75%{
+        border-color:rgb(244, 243, 208);
+    }
+    100%{
+        border-color:rgb(232, 231, 212);
+    }
+}
+
+
+@keyframes evilrun {
+    0%   { left: -200px; }
+    100% { left: 110%; }
+}
+
+@keyframes copsrun {
+    0%   { left: -350px; opacity: 1; }
+    60%  { left: 40%; opacity: 1; }
+    75%  { left: 42%; opacity: 1; }
+    90%  { left: 42%; opacity: .75; transform: translateY(0); }
+    95%  { left: 42%; opacity: .5; transform: translateY(0); }
+    97%  { left: 42%; opacity: .25; transform: translateY(0); }
+    100% { left: 42%; opacity: 0; transform: translateY(-200px); }
+}
+
+@keyframes ufoabduct {
+    0%   { top: -400px; }
+    25%  { top: -30px; }
+    50%  { top: -20px; }
+    75%  { top: -10px;}
+    100% { top: -400px; }
+}
+
+@keyframes hrmove{
+    0%  { width: 100%;}
+
+    100%{ width: 25%;}
+
+
+
+}
