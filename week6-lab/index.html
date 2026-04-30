@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(numOne,numTwo)
+        {
+            alert(numOne+numTwo)
+
+        }
+        function mult(numOne,numTwo)
+        {
+            alert(numOne*numTwo)
+        }
+        function sub(numOne,numTwo)
+        {
+            alert(numOne-numTwo)
+        }
+        function div(numOne,numTwo)
+        {
+            alert(numOne/numTwo)
+        }
+
+        var choice = Number(prompt("1. Add, 2.Multiply, 3.Subtract, 4.Divide ENTER THE NUMBER OF WHAT YOU WANT TO DO!"))
+        var x = Number(prompt("Give me a number"))
+
+        var y = Number(prompt("Give me another number"))
+
+        if (choice === 1)
+        {
+            add(x,y)
+        }
+        else if(choice === 2)
+        {
+            mult(x,y)
+        }
+        else if(choice === 3)
+        {
+            sub(x,y)
+        }
+        else if(choice === 4)
+        {
+            div(x,y)
+        }
+        else
+        {alert("YOU ENTERED THIS IN WRONG")}
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
