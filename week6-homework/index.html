@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+
+        var pay = Number(prompt("What is your hourly pay? $"))
+        var hour = Number(prompt("How many hours do you work a week?"))
+        var tax = .20 
+
+        var gross = hour * pay * 2
+        var unclesam = gross * tax
+        var net = gross - unclesam
+
+        alert("Gross Pay: $" + gross + " Taxes: $" + unclesam + " Net Pay: $" + net)
+        console.log("Gross Pay: $" + gross)
+        console.log("Taxes: $" + unclesam)
+        console.log("Net Pay: $"+net)
+
+        document.write("<p style='font-size: 40px'>Gross Pay: $" + gross + "<br>")
+        document.write("<p style='font-size: 40px'>Taxes: $" + unclesam + "<br>")
+        document.write("<p style='font-size: 40px'>Net Pay: $"+net)
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
