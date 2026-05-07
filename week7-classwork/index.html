@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 | Java</title>
+</head>
+<body>
+    <h1> Week 7 | oh my goddd</h1>
+    <br>
+    <h2>Current number</h2>
+    <h2 id="number">0</h2>
+    
+    <!-- setting up buttons-->
+    <input type="button" id="increment" value="Incroment">
+    <input type="button" id="decrement" value="Decroment">
+
+
+    
+    <br>
+    <hr>
+    <h2>The best joke in the world</h2>
+    <div id="jokecontainer">
+        <div id="thejoke">
+            <h3>where does a polar bear store its money?</h3>
+        </div>
+
+        <div id="jokeans">
+
+        </div>
+        <input type="button" id="giveanser" value="Where?">
+    </div>
+
+    <br>
+    <hr>
+    <h2>another example</h2>
+    
+    <input type="text" id="textbox" placeholder="Enter some text">
+    <div id="storedtext">
+
+    </div>
+    
+    <input type="button" id="savebutt" value="Save Text">
+    
+    
+    
+    
+    
+    
+    
+    <script>
+        var numtext = document.querySelector("#number")
+
+        var incbuton = document.querySelector("#increment")
+        var decbuton = document.querySelector("#decrement")
+
+        console.log(numtext)
+
+        var curnum = 0
+
+        function sub(){
+            curnum--
+            console.log(curnum)
+            numtext.innerHTML = curnum
+
+        }
+
+        function add()
+        {
+            curnum++
+            console.log(curnum)
+            numtext.innerHTML = curnum
+
+        }
+
+        incbuton.addEventListener("click",add)
+        decbuton.addEventListener("click",sub)
+
+
+
+        var anscont = document.querySelector("#jokeans")
+        var ansbut = document.querySelector("#giveanser")
+
+        function giveans(){
+            anscont.innerHTML += "<h4>THE SNOW BANK!!!!!!!!</h4>"
+
+        }
+
+        ansbut.addEventListener("click",giveans)
+
+        var textbox = document.querySelector("#textbox")
+        var savecont = document.querySelector("#storedtext")
+        var savebutton = document.querySelector("#savebutt")
+
+        function save(){
+            var text = textbox.value 
+            savecont.innerHTML += "<p>" + text + "</p>"
+            textbox.value = ""
+
+        }
+
+        savebutton.addEventListener("click", save)
+    </script>
+
+
+
+</body>
+</html>
