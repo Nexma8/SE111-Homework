@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8 | objects arrays for loops</title>
+</head>
+<body>
+
+
+
+
+    <script>
+        var person = {
+            first: "Travis", //we add comma becasue there is a key after this 
+            last: "Steele"
+        }
+
+        console.log(person.last)
+        console.log(person.first)
+
+
+        var car = {
+            tires: 6,
+            windows:25,
+            make: "subuwu",
+            model: "good question",
+            drive: function(){console.log("I JUST HIT A CHILD WITH MY SUBUWU OH GOD I GOT A FRESH COAT OF RED PAINT")}
+
+        }
+        console.log(car.make)
+        car.drive()
+
+
+
+
+        //array examples
+        var people =[
+            "Nelson",
+            "Greg",
+            "Travis",
+            "perry",
+            "Angel"
+        ]
+
+        console.log(people[2])
+        console.log(people[4])
+        console.log(" The size of the array is" + people.length)
+        console.log(people[5])
+
+        people[5] = "joel"
+        console.log(people[5])
+        console.log(" The size of the array is" + people.length)
+
+
+        var numberarray = [
+            1,2,3,4,5
+        ]
+        console.log(numberarray[3])
+
+        numberarray[3] = 69420
+
+        console.log(numberarray[3])
+
+        var movies = [
+            "howls moving castle",
+            "dodgeball",
+            "The worlds end",
+            "Hot Fuzz"
+        ]
+
+        movies.push("spaceballs the search for more money")
+        console.log(movies[4])
+
+
+
+    </script>
+    
+</body>
+</html>
